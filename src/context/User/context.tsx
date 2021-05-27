@@ -8,7 +8,7 @@ type UserContextType = {
 
 const initialState:UserContextType = {
     state: {
-        name: 'C Barreto',
+        name: 'My username',
         isLogged: false
     },
     dispatch: () => null

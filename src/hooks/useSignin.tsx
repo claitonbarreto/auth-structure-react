@@ -10,7 +10,7 @@ const useSignin = () : any => {
     }
 
     const signout = () => {
-        return null
+        dispatch({type: 'SIGNOUT'})
     }
 
     const setUsername = (username:string) => {
