@@ -4,7 +4,7 @@ import useSignin from './hooks/useSignin'
 const App: React.FC = () => {
 
     const usernameInputRef = useRef<HTMLInputElement>(null) 
-    const { user, signin, setUsername } = useSignin()
+    const { user, signin, signout,setUsername } = useSignin()
 
     return (
           
@@ -19,6 +19,9 @@ const App: React.FC = () => {
             </div>
             <button onClick={() => signin()}>
                 Login
+            </button>
+            <button onClick={() => signout()}>
+                Logout
             </button>
         </div>
         
