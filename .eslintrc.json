@@ -1,0 +1,34 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx":false
+      }
+    },
+    "ignorePatterns": ["*.html"],
+    "plugins": [
+      "@typescript-eslint",
+      "react-hooks"
+    ],
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "no-empty-function": "off",
+      "@typescript-eslint/no-empty-function": ["off"],
+      "@typescript-eslint/no-explicit-any": ["off"],
+      "@typescript-eslint/no-non-null-assertion": ["off"],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/prop-types": "off"
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    }
+  }
