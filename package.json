@@ -13,7 +13,8 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -27,12 +28,16 @@
     "@types/mini-css-extract-plugin": "^1.4.3",
     "@types/react": "^17.0.6",
     "@types/react-dom": "^17.0.5",
+    "@types/styled-components": "^5.1.9",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
     "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
     "css-loader": "^5.2.5",
     "eslint": "^7.27.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
+    "eslint-plugin-import": "^2.23.3",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "file-loader": "^6.2.0",
