@@ -11,6 +11,8 @@
     "plugins": [
       "@typescript-eslint",
       "react-hooks"
+      // "eslint-plugin-import",
+      // "eslint-import-resolver-babel-module"
     ],
     "extends": [
       "plugin:react/recommended",

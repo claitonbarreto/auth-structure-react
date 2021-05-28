@@ -1,5 +1,5 @@
 import React, {useReducer, createContext, Dispatch} from 'react'
-import { User, UserAction, userReducer } from './reducer'
+import { UserAction, userReducer } from './reducer'
 
 type UserContextType = {
     state: User
@@ -8,8 +8,10 @@ type UserContextType = {
 
 const initialState:UserContextType = {
     state: {
-        name: 'My username',
-        isLogged: false
+        email: '',
+        isLogged: false,
+        level: 0,
+        name: ''
     },
     dispatch: () => null
 }

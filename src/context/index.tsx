@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { CountContextProvider } from './Count/context'
+import { NotificationContextProvider } from './Notification/context'
 import { UserContextProvider } from './User/context'
 
 const GlobalContext:React.FC = ({children}) => {
     return (
-        <CountContextProvider>
+        <NotificationContextProvider>
             <UserContextProvider>
                 {children}
             </UserContextProvider>
-        </CountContextProvider>
+        </NotificationContextProvider>
     )
 }
 

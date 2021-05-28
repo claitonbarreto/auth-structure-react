@@ -1,8 +1,3 @@
-export type User = {
-    name: string
-    isLogged: boolean
-}
-
 export type UserAction = 
 | {type: "SIGNIN"}
 | {type: "SIGNOUT"}
