@@ -4,6 +4,10 @@ import App from "./App"
 import GlobalContext from './context'
 import GlobalStyles from './config/GlobalStyles'
 import AuthNotification from './components/AuthNotification'
+import Server from './config/mirageserver'
+
+if(process.env.NODE_ENV === 'development')
+    Server
 
 ReactDom.render(
     <GlobalContext>

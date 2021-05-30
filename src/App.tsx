@@ -17,8 +17,8 @@ const App: React.FC = () => {
                 <S.TextInput type="text" ref={emailInputRef} placeholder="you email"/>
                 <S.TextInput type="password" ref={passwordInputRef} placeholder="you email"/>
                 <button 
-                    onClick={() => 
-                        signin(emailInputRef.current?.value, passwordInputRef.current?.value)
+                    onClick={async () => 
+                        await signin(emailInputRef.current?.value, passwordInputRef.current?.value)
                     }
                 >
                     Login

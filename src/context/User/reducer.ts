@@ -2,6 +2,7 @@ export type UserAction =
 | {type: "SIGNIN"}
 | {type: "SIGNOUT"}
 | {type: "SET_USERNAME", payload: string}
+| {type: "SET_USER", payload: AuthUser}
 
 export const userReducer = (state: User, action:UserAction) : User => {
     switch (action.type) {
@@ -11,6 +12,9 @@ export const userReducer = (state: User, action:UserAction) : User => {
             return {...state, isLogged: false}
         case "SET_USERNAME":
             return {...state, name: action.payload}
+        case "SET_USER":
+            
+            return { isLogged: true, ...action.payload }
         default:
             return state
     }

@@ -1,5 +1,6 @@
 import webpack from 'webpack'
 import path from 'path'
+import dotenv from 'dotenv-webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
@@ -30,6 +31,7 @@ const config: webpack.Configuration = {
         extensions: ['.tsx', '.ts', '.js'],
     },
     plugins: [
+        new dotenv(),
         new HtmlWebpackPlugin({template: './src/index.html'}), 
         new MiniCssExtractPlugin(),
         new ForkTsCheckerWebpackPlugin({
@@ -37,7 +39,7 @@ const config: webpack.Configuration = {
             eslint: {
               files: "./src/**/*",
             },
-          })
+          }),
     ]
 }
 
