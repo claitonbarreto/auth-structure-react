@@ -13,8 +13,10 @@ const useSignin = () : any => {
 
             const auth = await AuthService.auth(email, password);
 
-            if(auth) 
+            if(auth.user) 
                 return showNotification(`You is logged with email: ${auth.user.email}`)
+
+            return showNotification(`Have a error with your login. ${auth}`)
         } catch (e) {
             console.log(e)
         }
